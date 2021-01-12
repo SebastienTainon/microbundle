@@ -1,6 +1,6 @@
 {
-	"name": "microbundle",
-	"version": "0.13.0",
+	"name": "microbundle-crl-runtime",
+	"version": "0.13.2",
 	"description": "Zero-configuration bundler for tiny JS libs, powered by Rollup.",
 	"main": "dist/microbundle.js",
 	"source": "src/index.js",
@@ -18,7 +18,10 @@
 		"changeset": "changeset",
 		"release": "npm run -s prepare && npm test && changeset publish"
 	},
-	"repository": "developit/microbundle",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/SebastienTainon/microbundle.git"
+	},
 	"prettier": {
 		"singleQuote": true,
 		"trailingComma": "all",
@@ -74,6 +77,8 @@
 	"dependencies": {
 		"@babel/core": "^7.12.10",
 		"@babel/plugin-proposal-class-properties": "7.12.1",
+		"@babel/plugin-proposal-decorators": "^7.8.3",
+		"@babel/plugin-proposal-optional-chaining": "^7.8.3",
 		"@babel/plugin-syntax-import-meta": "^7.10.4",
 		"@babel/plugin-syntax-jsx": "^7.12.1",
 		"@babel/plugin-transform-flow-strip-types": "^7.12.10",
@@ -87,6 +92,7 @@
 		"@rollup/plugin-commonjs": "^17.0.0",
 		"@rollup/plugin-json": "^4.1.0",
 		"@rollup/plugin-node-resolve": "^11.0.1",
+		"@svgr/rollup": "^5.4.0",
 		"asyncro": "^3.0.0",
 		"autoprefixer": "^10.1.0",
 		"babel-plugin-macros": "^3.0.1",
@@ -105,6 +111,7 @@
 		"rollup": "^2.35.1",
 		"rollup-plugin-bundle-size": "^1.0.3",
 		"rollup-plugin-postcss": "^4.0.0",
+		"rollup-plugin-smart-asset": "^2.0.7",
 		"rollup-plugin-terser": "^7.0.2",
 		"rollup-plugin-typescript2": "^0.29.0",
 		"sade": "^1.7.4",
@@ -116,6 +123,8 @@
 		"@babel/cli": "^7.12.10",
 		"@babel/node": "^7.12.10",
 		"@babel/plugin-proposal-throw-expressions": "^7.12.1",
+		"@babel/plugin-transform-runtime": "^7.12.10",
+		"@babel/runtime": "^7.12.5",
 		"@changesets/changelog-github": "^0.2.7",
 		"@changesets/cli": "^2.12.0",
 		"babel-jest": "^26.6.3",
